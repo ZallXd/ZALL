@@ -5,7 +5,7 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 ≡ *DONATION*
 ONLY WANT YOUR LOVE
 SUPPORT ME BY MAKING 69 MILLION FOLLOWERS ON MY INSTAGRAM`
-let img = 'https://raw.githubusercontent.com/Guru322/api/Guru/guru.jpg'
+let img = 'https://telegra.ph/file/b6acac0ea218267f6b43d.jpg'
 conn.sendFile(m.chat, img, 'img.jpg', don, m)
 }
 

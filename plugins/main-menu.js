@@ -7,8 +7,8 @@ const { levelling } = '../lib/levelling.js'
 import moment from 'moment-timezone'
 import { promises } from 'fs'
 import { join } from 'path'
-const time = moment.tz('Asia/Kolkata').format('HH')
-let wib = moment.tz('Asia/Kolkata').format('HH:mm:ss')
+const time = moment.tz('Asia/Jakarta').format('HH')
+let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 //import db from '../lib/database.js'
 
 let handler = async (m, { conn, usedPrefix, command}) => {
@@ -20,7 +20,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
     let uptime = clockString(_uptime)
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './Guru.jpg')
+let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
 let user = global.db.data.users[who]
 let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
 let { min, xp, max } = xpRange(user.level, global.multiplier)
@@ -60,8 +60,8 @@ let str = `
 ┆𝗗𝗮𝘁𝗲 :${date} 
 ┗─────────────────⬣
 ┆──────────────┈ ⳹
-┆type /list to
-┆to see all cmd
+┆ketik .list untuk
+┆menampilkan menu
 ┗─────────────────⬣`
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
     m.react(done)
@@ -82,16 +82,16 @@ function clockString(ms) {
       const time = moment.tz('Asia/Kolkata').format('HH')
       let res = "happy early in the day☀️"
       if (time >= 4) {
-        res = "Good Morning 🌄"
+        res = "Selamat Pagi 🌄"
       }
       if (time >= 10) {
-        res = "Good Afternoon ☀️"
+        res = "Selamat Siang ☀️"
       }
       if (time >= 15) {
-        res = "Good Afternoon 🌇"
+        res = "Selamat Sore 🌇"
       }
       if (time >= 18) {
-        res = "Good Night 🌙"
+        res = "Selamat Malam 🌙"
       }
       return res
     }

@@ -226,7 +226,7 @@ const listMessage = {
 */
 
 m.reply(`
-✅ *${type}* Now *${isEnable ? 'Active' : 'Deactive'}* ${isAll ? 'for this bot' : isUser ? '' : 'for this bot'}
+✅ *${type}* Telah *${isEnable ? 'Diaktifkan' : 'Dinonaktifkan'}* ${isAll ? 'Dalam Group Ini' : isUser ? '' : 'Dalam Bot'}
 `.trim()) 
 
 }
