@@ -7,8 +7,8 @@ import axios from 'axios'
 
 
 global.owner = [
-  ['6281251051640', 'Zall Store', true],
-  ['6285731706147', 'Zall', true], 
+  ['6281251051640', 'ᴢᴀʟʟ sᴛᴏʀᴇ', true],
+  ['6285731706147', 'ᴢᴀʟʟ', true], 
   [''] 
 ] //Number of owners
 
@@ -47,9 +47,9 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.botname = 'Z A L L - B O T'
+global.botname = 'ᴢᴀʟʟ - ʙᴏᴛ'
 global.premium = 'true'
-global.packname = 'Z A L L - B O T' 
+global.packname = 'ᴢᴀʟʟ - ʙᴏᴛ' 
 global.author = '@zallstore' 
 global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/zallstorereal\n' 
 global.dygp = 'https://chat.whatsapp.com/Bmb4I127aL7JNS3YS0VnKb'
@@ -59,7 +59,7 @@ global.fgpyp = 'skip'
 global.fglog = 'https://raw.githubusercontent.com/Guru322/api/Guru/guru.jpg' 
 global.dbase = 'mongodb+srv://guru:guru@cluster0.qpggl6x.mongodb.net/?retryWrites=true&w=majority' //ADD YOUR MONGODB BY CHANGIMG IT
 
-global.wait = '*⌛ _Memproses..._*\n*▰▰▰▱▱▱▱▱*'
+global.wait = '*⌛ _ᴡᴀɪᴛ..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✅'
