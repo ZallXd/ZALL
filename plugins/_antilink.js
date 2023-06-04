@@ -14,10 +14,10 @@ export async function before(m, {conn, isAdmin, isBotAdmin }) {
             const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
             if (m.text.includes(linkThisGroup)) return !0
         }
-        await conn.reply(m.chat, `*≡ Link Ditemukan*
+        await conn.reply(m.chat, `*≡ ʟɪɴᴋ ᴛᴇʀᴅᴇᴛᴇᴋsɪ*
             
-lo ini apa ini
-Sorry kak *@${m.sender.split('@')[0]}*  link kamu saya hapus, zehahaha ${isBotAdmin ? '' : '\n\nJadikan Admin Dulu La Bakaa'}`, null, { mentions: [m.sender] } )
+Jawir 
+Hallo *@${m.sender.split('@')[0]}*  Kuhapus wir ${isBotAdmin ? '' : '\n\nJadikan admin terlebih dahulu :"v'}`, null, { mentions: [m.sender] } )
         if (isBotAdmin && chat.antiLink) {
         	await conn.sendMessage(m.chat, { delete: m.key })
             await conn.sendMessage(m.chat, { delete: m.key })
